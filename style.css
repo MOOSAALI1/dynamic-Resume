@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3), 
+                inset 0px 2px 8px rgba(255, 255, 255, 0.2);
+    position: relative;
+    transform: translateY(-30px);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Layout for Form and Resume */
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form, .resume-container {
+    width: 48%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+                0px 8px 16px rgba(255, 255, 255, 0.05);
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #00ffe5;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], textarea, input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffffff;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+}
+
+.btn-tertiary {
+    background-color: #ffc107;
+}
+
+.btn-tertiary:hover {
+    background-color: #e0a800;
+}
+
+/* Resume Preview Styles */
+.hidden {
+    display: none;
+}
+
+.resume-container {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1),
+                0px 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.resume-container h1, .resume-container h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.resume-container p {
+    margin-bottom: 15px;
+}
+
+.resume-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1),
+                0px 8px 16px rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}

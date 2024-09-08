@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dynamic Resume Builder</h1>
+        </header>
+
+        <div class="content">
+            <form id="resumeForm" class="form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Education</legend>
+                    <label for="education">Education:</label>
+                    <textarea id="education" name="education" placeholder="Your education details" rows="3" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Work Experience</legend>
+                    <label for="workExperience">Work Experience:</label>
+                    <textarea id="workExperience" name="workExperience" placeholder="Your work experience details" rows="5" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Skills</legend>
+                    <label for="skills">Skills (comma-separated):</label>
+                    <input type="text" id="skills" name="skills" placeholder="Skill1, Skill2, Skill3" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Profile Picture</legend>
+                    <input type="file" id="imageUpload" accept="image/*">
+                    <img id="profilePic" alt="Profile Picture" class="hidden">
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary">Generate Resume</button>
+            </form>
+
+            <div id="resumeContainer" class="resume-container hidden">
+                <img id="resumeProfilePic" class="resume-img" alt="Profile Picture">
+                <h1 id="resumeName">Your Name</h1>
+                <p id="resumeEmail">your.email@example.com</p>
+                <h3>Education</h3>
+                <p id="resumeEducation">Your education details</p>
+                <h3>Work Experience</h3>
+                <p id="resumeWorkExperience">Your work experience details</p>
+                <h3>Skills</h3>
+                <p id="resumeSkills">Your skills</p>
+
+                <button id="resumeDownload" class="btn btn-secondary">Download as PDF</button>
+                <button id="editResume" class="btn btn-tertiary">Edit Resume</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
